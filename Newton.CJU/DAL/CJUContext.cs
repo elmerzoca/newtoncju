@@ -12,7 +12,9 @@ namespace Newton.CJU.DAL
 {
     public class CJUContext : DbContext
     {
-        public CJUContext() : base("CJUContext") { }
+        public CJUContext() : base("CJUContext") 
+        { 
+        }
 
         public DbSet<AreaJuridica> AreasJuridicas { get; set; }
         public DbSet<Pergunta> Perguntas { get; set; }
